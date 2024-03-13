@@ -1,4 +1,4 @@
-# rd-kit
+# rd-kits
 
 This is a header only libraries, you can just use it easy.
 
