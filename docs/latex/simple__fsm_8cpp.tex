@@ -1,0 +1,65 @@
+\hypertarget{simple__fsm_8cpp}{}\doxysection{example/simple\+\_\+fsm.cpp File Reference}
+\label{simple__fsm_8cpp}\index{example/simple\_fsm.cpp@{example/simple\_fsm.cpp}}
+
+
+This file contains the example of how to do with \mbox{\hyperlink{classMachineState}{Machine\+State}} class.  
+
+
+{\ttfamily \#include \char`\"{}simple\+\_\+fsm.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{simple__fsm_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the example of how to do with \mbox{\hyperlink{classMachineState}{Machine\+State}} class. 
+
+The basic usage of these \mbox{\hyperlink{classMachineState}{Machine\+State}}, you must have 3 kind of things on each state, there are input, outpu, and action
+
+The input is the condition that what the trigger for another state going into current state
+
+The output is the condition that what the trigger for current state going into another state
+
+The action is the action that you want to do with your state
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{simple__fsm_8h}{simple\_fsm.h}}"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{simple__fsm_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{comment}{// Declare MachineState object}}
+\DoxyCodeLine{  \mbox{\hyperlink{classMachineState}{MachineState}} state;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  state.\mbox{\hyperlink{classMachineState_aecaba83b9a50f33d0e384fe898d74a76}{reentry}}(0,0.04)}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{switch} (state.\mbox{\hyperlink{classMachineState_a35ecc0e65f2a927141d5165f96c81ed4}{value}})}
+\DoxyCodeLine{  \{}
+\DoxyCodeLine{     \textcolor{keywordflow}{case} 0:}
+\DoxyCodeLine{     \textcolor{comment}{// You can do something here}}
+\DoxyCodeLine{     state.\mbox{\hyperlink{classMachineState_a5f5f9e2be952617e8ce3e40d23de242b}{timeout}}(1, 0.04);}
+\DoxyCodeLine{     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{     \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{     state.\mbox{\hyperlink{classMachineState_a35ecc0e65f2a927141d5165f96c81ed4}{value}} = 2;}
+\DoxyCodeLine{     \textcolor{comment}{// You can do something here}}
+\DoxyCodeLine{     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{     \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{simple__fsm_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{simple__fsm_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{simple\_fsm.cpp@{simple\_fsm.cpp}!main@{main}}
+\index{main@{main}!simple\_fsm.cpp@{simple\_fsm.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
