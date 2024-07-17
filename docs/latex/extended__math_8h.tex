@@ -1,0 +1,222 @@
+\hypertarget{extended__math_8h}{}\doxysection{include/extended\+\_\+math.h File Reference}
+\label{extended__math_8h}\index{include/extended\_math.h@{include/extended\_math.h}}
+
+
+This file contains extended math functions.  
+
+
+{\ttfamily \#include \char`\"{}custom\+\_\+typedef.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}math.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{extended__math_8h_ad0387658d89d61c754a46420e97901b5}{pythagoras}} (\mbox{\hyperlink{structpoint2d__t}{point2d\+\_\+t}} point1, \mbox{\hyperlink{structpoint2d__t}{point2d\+\_\+t}} point2)
+\begin{DoxyCompactList}\small\item\em Calculate the distance between two points. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{extended__math_8h_a0378cc876146055742677190361c0fc0}{pythagoras}} (float x0, float y0, float x1, float y1)
+\begin{DoxyCompactList}\small\item\em Calculate the distance between two points. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{extended__math_8h_a0f1b7cf8ecf4daa764542443737cc246}{is\+\_\+inside\+\_\+rectangle}} (\mbox{\hyperlink{structpoint2d__t}{point2d\+\_\+t}} point, int field\+\_\+max\+\_\+x, int field\+\_\+min\+\_\+x, int field\+\_\+max\+\_\+y, int field\+\_\+min\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Calculate if the point is inside the rectangle. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{extended__math_8h_a1ccd0432182f964bf195b061fb0b5d95}{is\+\_\+inside\+\_\+rectangle}} (float x, float y, int field\+\_\+max\+\_\+x, int field\+\_\+min\+\_\+x, int field\+\_\+max\+\_\+y, int field\+\_\+min\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Calculate if the point is inside the rectangle. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{extended__math_8h_ab516d98d237f1f3cc2390e6695a99ba9}{calc\+\_\+area}} (int x1, int y1, int x2, int y2, int x3, int y3)
+\begin{DoxyCompactList}\small\item\em Calculate the area of a triangle. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{extended__math_8h_a7d9c851c8acd4249d6581aee82333a8d}{check\+\_\+point\+\_\+is\+\_\+inside\+\_\+triangle}} (int x, int y, int x1, int y1, int x2, int y2, int x3, int y3)
+\begin{DoxyCompactList}\small\item\em Check if a point is inside a triangle. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{extended__math_8h_a3cbdb3eabc02156504649aadbff1285b}{check\+\_\+point\+\_\+is\+\_\+inside\+\_\+triangle}} (\mbox{\hyperlink{structpoint2d__t}{point2d\+\_\+t}} point, int x1, int y1, int x2, int y2, int x3, int y3)
+\begin{DoxyCompactList}\small\item\em Check if a point is inside a triangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains extended math functions. 
+
+This file contains extended math functions. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{extended__math_8h_ab516d98d237f1f3cc2390e6695a99ba9}\label{extended__math_8h_ab516d98d237f1f3cc2390e6695a99ba9}} 
+\index{extended\_math.h@{extended\_math.h}!calc\_area@{calc\_area}}
+\index{calc\_area@{calc\_area}!extended\_math.h@{extended\_math.h}}
+\doxysubsubsection{\texorpdfstring{calc\_area()}{calc\_area()}}
+{\footnotesize\ttfamily float calc\+\_\+area (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{int}]{x3,  }\item[{int}]{y3 }\end{DoxyParamCaption})}
+
+
+
+Calculate the area of a triangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & The x coordinate of the first point. \\
+\hline
+{\em y1} & The y coordinate of the first point. \\
+\hline
+{\em x2} & The x coordinate of the second point. \\
+\hline
+{\em y2} & The y coordinate of the second point. \\
+\hline
+{\em x3} & The x coordinate of the third point. \\
+\hline
+{\em y3} & The y coordinate of the third point.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float The area of the triangle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__math_8h_a7d9c851c8acd4249d6581aee82333a8d}\label{extended__math_8h_a7d9c851c8acd4249d6581aee82333a8d}} 
+\index{extended\_math.h@{extended\_math.h}!check\_point\_is\_inside\_triangle@{check\_point\_is\_inside\_triangle}}
+\index{check\_point\_is\_inside\_triangle@{check\_point\_is\_inside\_triangle}!extended\_math.h@{extended\_math.h}}
+\doxysubsubsection{\texorpdfstring{check\_point\_is\_inside\_triangle()}{check\_point\_is\_inside\_triangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool check\+\_\+point\+\_\+is\+\_\+inside\+\_\+triangle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{int}]{x3,  }\item[{int}]{y3 }\end{DoxyParamCaption})}
+
+
+
+Check if a point is inside a triangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the point. \\
+\hline
+{\em y} & The y coordinate of the point. \\
+\hline
+{\em x1} & The x coordinate of the first point of the triangle. \\
+\hline
+{\em y1} & The y coordinate of the first point of the triangle. \\
+\hline
+{\em x2} & The x coordinate of the second point of the triangle. \\
+\hline
+{\em y2} & The y coordinate of the second point of the triangle. \\
+\hline
+{\em x3} & The x coordinate of the third point of the triangle. \\
+\hline
+{\em y3} & The y coordinate of the third point of the triangle.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the point is inside the triangle, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__math_8h_a3cbdb3eabc02156504649aadbff1285b}\label{extended__math_8h_a3cbdb3eabc02156504649aadbff1285b}} 
+\index{extended\_math.h@{extended\_math.h}!check\_point\_is\_inside\_triangle@{check\_point\_is\_inside\_triangle}}
+\index{check\_point\_is\_inside\_triangle@{check\_point\_is\_inside\_triangle}!extended\_math.h@{extended\_math.h}}
+\doxysubsubsection{\texorpdfstring{check\_point\_is\_inside\_triangle()}{check\_point\_is\_inside\_triangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool check\+\_\+point\+\_\+is\+\_\+inside\+\_\+triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint2d__t}{point2d\+\_\+t}}}]{point,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{int}]{x3,  }\item[{int}]{y3 }\end{DoxyParamCaption})}
+
+
+
+Check if a point is inside a triangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & The point to check. \\
+\hline
+{\em x1} & The x coordinate of the first point of the triangle. \\
+\hline
+{\em y1} & The y coordinate of the first point of the triangle. \\
+\hline
+{\em x2} & The x coordinate of the second point of the triangle. \\
+\hline
+{\em y2} & The y coordinate of the second point of the triangle. \\
+\hline
+{\em x3} & The x coordinate of the third point of the triangle. \\
+\hline
+{\em y3} & The y coordinate of the third point of the triangle.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the point is inside the triangle, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__math_8h_a1ccd0432182f964bf195b061fb0b5d95}\label{extended__math_8h_a1ccd0432182f964bf195b061fb0b5d95}} 
+\index{extended\_math.h@{extended\_math.h}!is\_inside\_rectangle@{is\_inside\_rectangle}}
+\index{is\_inside\_rectangle@{is\_inside\_rectangle}!extended\_math.h@{extended\_math.h}}
+\doxysubsubsection{\texorpdfstring{is\_inside\_rectangle()}{is\_inside\_rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool is\+\_\+inside\+\_\+rectangle (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{field\+\_\+max\+\_\+x,  }\item[{int}]{field\+\_\+min\+\_\+x,  }\item[{int}]{field\+\_\+max\+\_\+y,  }\item[{int}]{field\+\_\+min\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Calculate if the point is inside the rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the point. \\
+\hline
+{\em y} & The y coordinate of the point. \\
+\hline
+{\em field\+\_\+max\+\_\+x} & The maximum x coordinate of the field. \\
+\hline
+{\em field\+\_\+min\+\_\+x} & The minimum x coordinate of the field. \\
+\hline
+{\em field\+\_\+max\+\_\+y} & The maximum y coordinate of the field. \\
+\hline
+{\em field\+\_\+min\+\_\+y} & The minimum y coordinate of the field.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the point is inside the rectangle, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__math_8h_a0f1b7cf8ecf4daa764542443737cc246}\label{extended__math_8h_a0f1b7cf8ecf4daa764542443737cc246}} 
+\index{extended\_math.h@{extended\_math.h}!is\_inside\_rectangle@{is\_inside\_rectangle}}
+\index{is\_inside\_rectangle@{is\_inside\_rectangle}!extended\_math.h@{extended\_math.h}}
+\doxysubsubsection{\texorpdfstring{is\_inside\_rectangle()}{is\_inside\_rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool is\+\_\+inside\+\_\+rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint2d__t}{point2d\+\_\+t}}}]{point,  }\item[{int}]{field\+\_\+max\+\_\+x,  }\item[{int}]{field\+\_\+min\+\_\+x,  }\item[{int}]{field\+\_\+max\+\_\+y,  }\item[{int}]{field\+\_\+min\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Calculate if the point is inside the rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & The point to check. \\
+\hline
+{\em field\+\_\+max\+\_\+x} & The maximum x coordinate of the field. \\
+\hline
+{\em field\+\_\+min\+\_\+x} & The minimum x coordinate of the field. \\
+\hline
+{\em field\+\_\+max\+\_\+y} & The maximum y coordinate of the field. \\
+\hline
+{\em field\+\_\+min\+\_\+y} & The minimum y coordinate of the field.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the point is inside the rectangle, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__math_8h_a0378cc876146055742677190361c0fc0}\label{extended__math_8h_a0378cc876146055742677190361c0fc0}} 
+\index{extended\_math.h@{extended\_math.h}!pythagoras@{pythagoras}}
+\index{pythagoras@{pythagoras}!extended\_math.h@{extended\_math.h}}
+\doxysubsubsection{\texorpdfstring{pythagoras()}{pythagoras()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float pythagoras (\begin{DoxyParamCaption}\item[{float}]{x0,  }\item[{float}]{y0,  }\item[{float}]{x1,  }\item[{float}]{y1 }\end{DoxyParamCaption})}
+
+
+
+Calculate the distance between two points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & The x coordinate of the first point. \\
+\hline
+{\em y0} & The y coordinate of the first point. \\
+\hline
+{\em x1} & The x coordinate of the second point. \\
+\hline
+{\em y1} & The y coordinate of the second point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float The distance between the two points. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extended__math_8h_ad0387658d89d61c754a46420e97901b5}\label{extended__math_8h_ad0387658d89d61c754a46420e97901b5}} 
+\index{extended\_math.h@{extended\_math.h}!pythagoras@{pythagoras}}
+\index{pythagoras@{pythagoras}!extended\_math.h@{extended\_math.h}}
+\doxysubsubsection{\texorpdfstring{pythagoras()}{pythagoras()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float pythagoras (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint2d__t}{point2d\+\_\+t}}}]{point1,  }\item[{\mbox{\hyperlink{structpoint2d__t}{point2d\+\_\+t}}}]{point2 }\end{DoxyParamCaption})}
+
+
+
+Calculate the distance between two points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point1} & The first point. \\
+\hline
+{\em point2} & The second point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float The distance between the two points. 
+\end{DoxyReturn}

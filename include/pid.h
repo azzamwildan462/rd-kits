@@ -1,8 +1,20 @@
+/**
+ * @file pid.h
+ *
+ * @brief This file contains the PID class.
+ *
+ * This file contains the PID class.
+ */
+
 #ifndef PID_H_
 #define PID_H_
 
 #include <chrono>
 
+/**
+ * @brief The PID class.
+ *
+ */
 class PID
 {
     float Kp;
@@ -19,6 +31,13 @@ class PID
     float output_speed;
     std::chrono::system_clock::time_point last_call;
 
+    /**
+     * @brief Construct a new PID object.
+     *
+     * @param Kp The proportional gain.
+     * @param Ki The integral gain.
+     * @param Kd The derivative gain.
+     */
     PID(float Kp, float Ki, float Kd)
     {
         this->Kp = Kp;
@@ -26,6 +45,13 @@ class PID
         this->Kd = Kd;
     }
 
+    /**
+     * @brief Calculate the PID output.
+     *
+     * @param error The error.
+     * @param minmax The minimum and maximum output.
+     * @return float The output.
+     */
     float calculate(float error, float minmax)
     {
         std::chrono::high_resolution_clock::time_point t_now = std::chrono::high_resolution_clock::now();

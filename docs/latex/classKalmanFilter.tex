@@ -1,0 +1,95 @@
+\hypertarget{classKalmanFilter}{}\doxysection{Kalman\+Filter Class Reference}
+\label{classKalmanFilter}\index{KalmanFilter@{KalmanFilter}}
+
+
+{\ttfamily \#include $<$standard\+\_\+kf.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classKalmanFilter_abcfeb90f1e474e155911d51040efa1d2}{Kalman\+Filter}} (double dt, const Eigen\+::\+Matrix\+Xd \&A, const Eigen\+::\+Matrix\+Xd \&C, const Eigen\+::\+Matrix\+Xd \&Q, const Eigen\+::\+Matrix\+Xd \&R, const Eigen\+::\+Matrix\+Xd \&P)
+\item 
+\mbox{\hyperlink{classKalmanFilter_aab2cc3677e9fcb19fff16b84c997f30a}{Kalman\+Filter}} ()
+\item 
+void \mbox{\hyperlink{classKalmanFilter_aa5c8b24270c41353c7eafc0b81b90afa}{init}} ()
+\item 
+void \mbox{\hyperlink{classKalmanFilter_a0940a83df44f1d2b821ac2be55c972bb}{init}} (double t0, const Eigen\+::\+Vector\+Xd \&x0)
+\item 
+void \mbox{\hyperlink{classKalmanFilter_afc7f1531ab0567cfe5852c38fef6afdf}{update}} (const Eigen\+::\+Vector\+Xd \&y)
+\item 
+void \mbox{\hyperlink{classKalmanFilter_a5864adcb5fd36d1c44363125c8015c27}{update}} (const Eigen\+::\+Vector\+Xd \&y, double dt, const Eigen\+::\+Matrix\+Xd A)
+\item 
+Eigen\+::\+Vector\+Xd \mbox{\hyperlink{classKalmanFilter_a155e177e3eb6771b61550d8c811cebfc}{state}} ()
+\item 
+double \mbox{\hyperlink{classKalmanFilter_afe539f1dafd86c2702f5655cbb4f5830}{time}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of \mbox{\hyperlink{classKalmanFilter}{Kalman\+Filter}} class.
+
+\begin{DoxyAuthor}{Author}
+\+: Hayk Martirosyan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+\+: 2014.\+11.\+15 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classKalmanFilter_abcfeb90f1e474e155911d51040efa1d2}\label{classKalmanFilter_abcfeb90f1e474e155911d51040efa1d2}} 
+\index{KalmanFilter@{KalmanFilter}!KalmanFilter@{KalmanFilter}}
+\index{KalmanFilter@{KalmanFilter}!KalmanFilter@{KalmanFilter}}
+\doxysubsubsection{\texorpdfstring{KalmanFilter()}{KalmanFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Kalman\+Filter\+::\+Kalman\+Filter (\begin{DoxyParamCaption}\item[{double}]{dt,  }\item[{const Eigen\+::\+Matrix\+Xd \&}]{A,  }\item[{const Eigen\+::\+Matrix\+Xd \&}]{C,  }\item[{const Eigen\+::\+Matrix\+Xd \&}]{Q,  }\item[{const Eigen\+::\+Matrix\+Xd \&}]{R,  }\item[{const Eigen\+::\+Matrix\+Xd \&}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a Kalman filter with the specified matrices. A -\/ System dynamics matrix C -\/ Output matrix Q -\/ Process noise covariance R -\/ Measurement noise covariance P -\/ Estimate error covariance \mbox{\Hypertarget{classKalmanFilter_aab2cc3677e9fcb19fff16b84c997f30a}\label{classKalmanFilter_aab2cc3677e9fcb19fff16b84c997f30a}} 
+\index{KalmanFilter@{KalmanFilter}!KalmanFilter@{KalmanFilter}}
+\index{KalmanFilter@{KalmanFilter}!KalmanFilter@{KalmanFilter}}
+\doxysubsubsection{\texorpdfstring{KalmanFilter()}{KalmanFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Kalman\+Filter\+::\+Kalman\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a blank estimator. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classKalmanFilter_aa5c8b24270c41353c7eafc0b81b90afa}\label{classKalmanFilter_aa5c8b24270c41353c7eafc0b81b90afa}} 
+\index{KalmanFilter@{KalmanFilter}!init@{init}}
+\index{init@{init}!KalmanFilter@{KalmanFilter}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Kalman\+Filter\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initialize the filter with initial states as zero. \mbox{\Hypertarget{classKalmanFilter_a0940a83df44f1d2b821ac2be55c972bb}\label{classKalmanFilter_a0940a83df44f1d2b821ac2be55c972bb}} 
+\index{KalmanFilter@{KalmanFilter}!init@{init}}
+\index{init@{init}!KalmanFilter@{KalmanFilter}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Kalman\+Filter\+::init (\begin{DoxyParamCaption}\item[{double}]{t0,  }\item[{const Eigen\+::\+Vector\+Xd \&}]{x0 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initialize the filter with a guess for initial states. \mbox{\Hypertarget{classKalmanFilter_a155e177e3eb6771b61550d8c811cebfc}\label{classKalmanFilter_a155e177e3eb6771b61550d8c811cebfc}} 
+\index{KalmanFilter@{KalmanFilter}!state@{state}}
+\index{state@{state}!KalmanFilter@{KalmanFilter}}
+\doxysubsubsection{\texorpdfstring{state()}{state()}}
+{\footnotesize\ttfamily Eigen\+::\+Vector\+Xd Kalman\+Filter\+::state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the current state and time. \mbox{\Hypertarget{classKalmanFilter_afe539f1dafd86c2702f5655cbb4f5830}\label{classKalmanFilter_afe539f1dafd86c2702f5655cbb4f5830}} 
+\index{KalmanFilter@{KalmanFilter}!time@{time}}
+\index{time@{time}!KalmanFilter@{KalmanFilter}}
+\doxysubsubsection{\texorpdfstring{time()}{time()}}
+{\footnotesize\ttfamily double Kalman\+Filter\+::time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classKalmanFilter_afc7f1531ab0567cfe5852c38fef6afdf}\label{classKalmanFilter_afc7f1531ab0567cfe5852c38fef6afdf}} 
+\index{KalmanFilter@{KalmanFilter}!update@{update}}
+\index{update@{update}!KalmanFilter@{KalmanFilter}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Kalman\+Filter\+::update (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector\+Xd \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Update the estimated state based on measured values. The time step is assumed to remain constant. \mbox{\Hypertarget{classKalmanFilter_a5864adcb5fd36d1c44363125c8015c27}\label{classKalmanFilter_a5864adcb5fd36d1c44363125c8015c27}} 
+\index{KalmanFilter@{KalmanFilter}!update@{update}}
+\index{update@{update}!KalmanFilter@{KalmanFilter}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Kalman\+Filter\+::update (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector\+Xd \&}]{y,  }\item[{double}]{dt,  }\item[{const Eigen\+::\+Matrix\+Xd}]{A }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Update the estimated state based on measured values, using the given time step and dynamics matrix. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{standard__kf_8h}{standard\+\_\+kf.\+h}}\end{DoxyCompactItemize}

@@ -13,7 +13,9 @@ Basic type definitions
 Basic math operations
 PID
 Simple Finite State Machine
-One dimensional kalman filter with velocity constant
+One dimensional kalman filter with velocity constant // It's didn't work anymore, so dont use it
+Single Header Kalman filter based on https://github.com/hmartiro/kalman-cpp
+Print with colour
 ```
 
 ## Install

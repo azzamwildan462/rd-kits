@@ -1,0 +1,38 @@
+\hypertarget{keyboard__input_8h}{}\doxysection{include/keyboard\+\_\+input.h File Reference}
+\label{keyboard__input_8h}\index{include/keyboard\_input.h@{include/keyboard\_input.h}}
+
+
+This file contains keyboard input functions.  
+
+
+{\ttfamily \#include \char`\"{}stdio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sys/ioctl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}termios.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{keyboard__input_8h_ad5451da499ab9d3907da8dd7060ab677}{kbhit}} ()
+\begin{DoxyCompactList}\small\item\em Check if a key is pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains keyboard input functions. 
+
+This file contains keyboard input functions. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{keyboard__input_8h_ad5451da499ab9d3907da8dd7060ab677}\label{keyboard__input_8h_ad5451da499ab9d3907da8dd7060ab677}} 
+\index{keyboard\_input.h@{keyboard\_input.h}!kbhit@{kbhit}}
+\index{kbhit@{kbhit}!keyboard\_input.h@{keyboard\_input.h}}
+\doxysubsubsection{\texorpdfstring{kbhit()}{kbhit()}}
+{\footnotesize\ttfamily int kbhit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if a key is pressed. 
+
+It\textquotesingle{}s an unblocking function that returns the number of bytes waiting in the input buffer.
+
+\begin{DoxyReturn}{Returns}
+int The number of bytes waiting in the input buffer. 
+\end{DoxyReturn}

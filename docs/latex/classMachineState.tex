@@ -1,0 +1,187 @@
+\hypertarget{classMachineState}{}\doxysection{Machine\+State Class Reference}
+\label{classMachineState}\index{MachineState@{MachineState}}
+
+
+The \mbox{\hyperlink{classMachineState}{Machine\+State}} class.  
+
+
+
+
+{\ttfamily \#include $<$simple\+\_\+fsm.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMachineState_ae43e15140f445866b84c2b13f65fd5a3}{Machine\+State}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classMachineState}{Machine\+State}} object. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classMachineState_a376a89a68e51c5f83ac4aefbaa68e8fe}{is\+Interrupted}} ()
+\begin{DoxyCompactList}\small\item\em Check if the state is interrupted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMachineState_a12da45c9642cc42737fe968a823428a9}{reset\+Uptime\+Timeout}} ()
+\begin{DoxyCompactList}\small\item\em Reset the uptime timeout. So the timeout will be reset to the current time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMachineState_a72bdcd8a3b30d2483b3a40a1faf60cd4}{reset\+Uptime\+Reentry}} ()
+\begin{DoxyCompactList}\small\item\em Reset the uptime reentry. So the reentry will be reset to the current time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMachineState_a5f5f9e2be952617e8ce3e40d23de242b}{timeout}} (int16\+\_\+t target\+\_\+state, float period)
+\begin{DoxyCompactList}\small\item\em Timeout the state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMachineState_aecaba83b9a50f33d0e384fe898d74a76}{reentry}} (int16\+\_\+t target\+\_\+state, float period)
+\begin{DoxyCompactList}\small\item\em Reentry the state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int16\+\_\+t \mbox{\hyperlink{classMachineState_a35ecc0e65f2a927141d5165f96c81ed4}{value}}
+\begin{DoxyCompactList}\small\item\em The value of the state. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classMachineState_aad2bcaae6a9085252fc5793a5746662e}{intr\+\_\+cntr}}
+\begin{DoxyCompactList}\small\item\em The interrupt counter. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classMachineState_a9da05a52d85e99515e9f6bad93d5d785}{prev\+\_\+intr\+\_\+cntr}}
+\begin{DoxyCompactList}\small\item\em The previous interrupt counter. \end{DoxyCompactList}\item 
+std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \mbox{\hyperlink{classMachineState_aba3bc856fd848538c93d38791fa37979}{uptime\+\_\+timeout}}
+\begin{DoxyCompactList}\small\item\em The uptime timeout. \end{DoxyCompactList}\item 
+std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \mbox{\hyperlink{classMachineState_a65e0cf5f47f7c4eab91e5cb86f9efb4d}{uptime\+\_\+reentry}}
+\begin{DoxyCompactList}\small\item\em The uptime reentry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classMachineState}{Machine\+State}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMachineState_ae43e15140f445866b84c2b13f65fd5a3}\label{classMachineState_ae43e15140f445866b84c2b13f65fd5a3}} 
+\index{MachineState@{MachineState}!MachineState@{MachineState}}
+\index{MachineState@{MachineState}!MachineState@{MachineState}}
+\doxysubsubsection{\texorpdfstring{MachineState()}{MachineState()}}
+{\footnotesize\ttfamily Machine\+State\+::\+Machine\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classMachineState}{Machine\+State}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMachineState_a376a89a68e51c5f83ac4aefbaa68e8fe}\label{classMachineState_a376a89a68e51c5f83ac4aefbaa68e8fe}} 
+\index{MachineState@{MachineState}!isInterrupted@{isInterrupted}}
+\index{isInterrupted@{isInterrupted}!MachineState@{MachineState}}
+\doxysubsubsection{\texorpdfstring{isInterrupted()}{isInterrupted()}}
+{\footnotesize\ttfamily uint8\+\_\+t Machine\+State\+::is\+Interrupted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the state is interrupted. 
+
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t 1 if the state is interrupted, 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMachineState_aecaba83b9a50f33d0e384fe898d74a76}\label{classMachineState_aecaba83b9a50f33d0e384fe898d74a76}} 
+\index{MachineState@{MachineState}!reentry@{reentry}}
+\index{reentry@{reentry}!MachineState@{MachineState}}
+\doxysubsubsection{\texorpdfstring{reentry()}{reentry()}}
+{\footnotesize\ttfamily void Machine\+State\+::reentry (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{target\+\_\+state,  }\item[{float}]{period }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reentry the state. 
+
+If the elapsed time is greater than the period (these function not called anymore), the state will be changed to the target state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+\_\+state} & The target state. \\
+\hline
+{\em period} & The period. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMachineState_a72bdcd8a3b30d2483b3a40a1faf60cd4}\label{classMachineState_a72bdcd8a3b30d2483b3a40a1faf60cd4}} 
+\index{MachineState@{MachineState}!resetUptimeReentry@{resetUptimeReentry}}
+\index{resetUptimeReentry@{resetUptimeReentry}!MachineState@{MachineState}}
+\doxysubsubsection{\texorpdfstring{resetUptimeReentry()}{resetUptimeReentry()}}
+{\footnotesize\ttfamily void Machine\+State\+::reset\+Uptime\+Reentry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset the uptime reentry. So the reentry will be reset to the current time. 
+
+\mbox{\Hypertarget{classMachineState_a12da45c9642cc42737fe968a823428a9}\label{classMachineState_a12da45c9642cc42737fe968a823428a9}} 
+\index{MachineState@{MachineState}!resetUptimeTimeout@{resetUptimeTimeout}}
+\index{resetUptimeTimeout@{resetUptimeTimeout}!MachineState@{MachineState}}
+\doxysubsubsection{\texorpdfstring{resetUptimeTimeout()}{resetUptimeTimeout()}}
+{\footnotesize\ttfamily void Machine\+State\+::reset\+Uptime\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset the uptime timeout. So the timeout will be reset to the current time. 
+
+\mbox{\Hypertarget{classMachineState_a5f5f9e2be952617e8ce3e40d23de242b}\label{classMachineState_a5f5f9e2be952617e8ce3e40d23de242b}} 
+\index{MachineState@{MachineState}!timeout@{timeout}}
+\index{timeout@{timeout}!MachineState@{MachineState}}
+\doxysubsubsection{\texorpdfstring{timeout()}{timeout()}}
+{\footnotesize\ttfamily void Machine\+State\+::timeout (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{target\+\_\+state,  }\item[{float}]{period }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Timeout the state. 
+
+If the elapsed time is greater than the period, the state will be changed to the target state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+\_\+state} & The target state. \\
+\hline
+{\em period} & The period. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMachineState_aad2bcaae6a9085252fc5793a5746662e}\label{classMachineState_aad2bcaae6a9085252fc5793a5746662e}} 
+\index{MachineState@{MachineState}!intr\_cntr@{intr\_cntr}}
+\index{intr\_cntr@{intr\_cntr}!MachineState@{MachineState}}
+\doxysubsubsection{\texorpdfstring{intr\_cntr}{intr\_cntr}}
+{\footnotesize\ttfamily uint8\+\_\+t Machine\+State\+::intr\+\_\+cntr}
+
+
+
+The interrupt counter. 
+
+\mbox{\Hypertarget{classMachineState_a9da05a52d85e99515e9f6bad93d5d785}\label{classMachineState_a9da05a52d85e99515e9f6bad93d5d785}} 
+\index{MachineState@{MachineState}!prev\_intr\_cntr@{prev\_intr\_cntr}}
+\index{prev\_intr\_cntr@{prev\_intr\_cntr}!MachineState@{MachineState}}
+\doxysubsubsection{\texorpdfstring{prev\_intr\_cntr}{prev\_intr\_cntr}}
+{\footnotesize\ttfamily uint8\+\_\+t Machine\+State\+::prev\+\_\+intr\+\_\+cntr}
+
+
+
+The previous interrupt counter. 
+
+\mbox{\Hypertarget{classMachineState_a65e0cf5f47f7c4eab91e5cb86f9efb4d}\label{classMachineState_a65e0cf5f47f7c4eab91e5cb86f9efb4d}} 
+\index{MachineState@{MachineState}!uptime\_reentry@{uptime\_reentry}}
+\index{uptime\_reentry@{uptime\_reentry}!MachineState@{MachineState}}
+\doxysubsubsection{\texorpdfstring{uptime\_reentry}{uptime\_reentry}}
+{\footnotesize\ttfamily std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point Machine\+State\+::uptime\+\_\+reentry}
+
+
+
+The uptime reentry. 
+
+\mbox{\Hypertarget{classMachineState_aba3bc856fd848538c93d38791fa37979}\label{classMachineState_aba3bc856fd848538c93d38791fa37979}} 
+\index{MachineState@{MachineState}!uptime\_timeout@{uptime\_timeout}}
+\index{uptime\_timeout@{uptime\_timeout}!MachineState@{MachineState}}
+\doxysubsubsection{\texorpdfstring{uptime\_timeout}{uptime\_timeout}}
+{\footnotesize\ttfamily std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point Machine\+State\+::uptime\+\_\+timeout}
+
+
+
+The uptime timeout. 
+
+\mbox{\Hypertarget{classMachineState_a35ecc0e65f2a927141d5165f96c81ed4}\label{classMachineState_a35ecc0e65f2a927141d5165f96c81ed4}} 
+\index{MachineState@{MachineState}!value@{value}}
+\index{value@{value}!MachineState@{MachineState}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily int16\+\_\+t Machine\+State\+::value}
+
+
+
+The value of the state. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{simple__fsm_8h}{simple\+\_\+fsm.\+h}}\end{DoxyCompactItemize}

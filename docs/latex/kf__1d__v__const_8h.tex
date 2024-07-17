@@ -1,0 +1,62 @@
+\hypertarget{kf__1d__v__const_8h}{}\doxysection{include/kf\+\_\+1d\+\_\+v\+\_\+const.h File Reference}
+\label{kf__1d__v__const_8h}\index{include/kf\_1d\_v\_const.h@{include/kf\_1d\_v\_const.h}}
+
+
+This file contains a 1D Kalman filter with constant velocity model.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+{\ttfamily \#include $<$float.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdifferential__v__const__t}{differential\+\_\+v\+\_\+const\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structKF}{KF}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{kf__1d__v__const_8h_a634b2de1d27b4fd5b22f6fc46b805d9b}{get\+\_\+time}} (void)
+\item 
+void \mbox{\hyperlink{kf__1d__v__const_8h_a7194b21483ad2ad0a73da3a46ae7b4de}{KF\+\_\+init}} (\mbox{\hyperlink{structKF}{KF}} $\ast$kf, float x, float x\+\_\+dot)
+\item 
+\mbox{\hyperlink{structdifferential__v__const__t}{differential\+\_\+v\+\_\+const\+\_\+t}} \mbox{\hyperlink{kf__1d__v__const_8h_a2832e397e1f0b1d98faee6979ccf978d}{KF\+\_\+update}} (\mbox{\hyperlink{structKF}{KF}} $\ast$kf, float x)
+\item 
+\mbox{\hyperlink{structdifferential__v__const__t}{differential\+\_\+v\+\_\+const\+\_\+t}} \mbox{\hyperlink{kf__1d__v__const_8h_aff7718c54eb21b0681c7138cbec65cf7}{KF\+\_\+predict}} (\mbox{\hyperlink{structKF}{KF}} $\ast$kf, float time\+\_\+target)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains a 1D Kalman filter with constant velocity model. 
+
+This header was not used anymore, don\textquotesingle{}t include it in the future. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{kf__1d__v__const_8h_a634b2de1d27b4fd5b22f6fc46b805d9b}\label{kf__1d__v__const_8h_a634b2de1d27b4fd5b22f6fc46b805d9b}} 
+\index{kf\_1d\_v\_const.h@{kf\_1d\_v\_const.h}!get\_time@{get\_time}}
+\index{get\_time@{get\_time}!kf\_1d\_v\_const.h@{kf\_1d\_v\_const.h}}
+\doxysubsubsection{\texorpdfstring{get\_time()}{get\_time()}}
+{\footnotesize\ttfamily double get\+\_\+time (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{kf__1d__v__const_8h_a7194b21483ad2ad0a73da3a46ae7b4de}\label{kf__1d__v__const_8h_a7194b21483ad2ad0a73da3a46ae7b4de}} 
+\index{kf\_1d\_v\_const.h@{kf\_1d\_v\_const.h}!KF\_init@{KF\_init}}
+\index{KF\_init@{KF\_init}!kf\_1d\_v\_const.h@{kf\_1d\_v\_const.h}}
+\doxysubsubsection{\texorpdfstring{KF\_init()}{KF\_init()}}
+{\footnotesize\ttfamily void KF\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKF}{KF}} $\ast$}]{kf,  }\item[{float}]{x,  }\item[{float}]{x\+\_\+dot }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{kf__1d__v__const_8h_aff7718c54eb21b0681c7138cbec65cf7}\label{kf__1d__v__const_8h_aff7718c54eb21b0681c7138cbec65cf7}} 
+\index{kf\_1d\_v\_const.h@{kf\_1d\_v\_const.h}!KF\_predict@{KF\_predict}}
+\index{KF\_predict@{KF\_predict}!kf\_1d\_v\_const.h@{kf\_1d\_v\_const.h}}
+\doxysubsubsection{\texorpdfstring{KF\_predict()}{KF\_predict()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdifferential__v__const__t}{differential\+\_\+v\+\_\+const\+\_\+t}} KF\+\_\+predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKF}{KF}} $\ast$}]{kf,  }\item[{float}]{time\+\_\+target }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{kf__1d__v__const_8h_a2832e397e1f0b1d98faee6979ccf978d}\label{kf__1d__v__const_8h_a2832e397e1f0b1d98faee6979ccf978d}} 
+\index{kf\_1d\_v\_const.h@{kf\_1d\_v\_const.h}!KF\_update@{KF\_update}}
+\index{KF\_update@{KF\_update}!kf\_1d\_v\_const.h@{kf\_1d\_v\_const.h}}
+\doxysubsubsection{\texorpdfstring{KF\_update()}{KF\_update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdifferential__v__const__t}{differential\+\_\+v\+\_\+const\+\_\+t}} KF\+\_\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structKF}{KF}} $\ast$}]{kf,  }\item[{float}]{x }\end{DoxyParamCaption})}
+

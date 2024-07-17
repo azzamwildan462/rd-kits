@@ -1,0 +1,109 @@
+\hypertarget{stdout__with__colour_8h}{}\doxysection{include/stdout\+\_\+with\+\_\+colour.h File Reference}
+\label{stdout__with__colour_8h}\index{include/stdout\_with\_colour.h@{include/stdout\_with\_colour.h}}
+
+
+This file contains a function to print text with colour.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{stdout__with__colour_8h_ad86358bf19927183dd7b4ae215a29731}{COLOR\+\_\+\+RED}}~0x01
+\item 
+\#define \mbox{\hyperlink{stdout__with__colour_8h_afc9149f5de51bd9ac4f5ebbfa153f018}{COLOR\+\_\+\+GREEN}}~0x02
+\item 
+\#define \mbox{\hyperlink{stdout__with__colour_8h_a4534b577b74a58b0f4b7be027af664e0}{COLOR\+\_\+\+YELLOW}}~0x03
+\item 
+\#define \mbox{\hyperlink{stdout__with__colour_8h_a23c70d699a5a775bc2e1ebeb8603f630}{COLOR\+\_\+\+BLUE}}~0x04
+\item 
+\#define \mbox{\hyperlink{stdout__with__colour_8h_a8deb0beccea721b35bdb1b4f7264fe75}{COLOR\+\_\+\+MAGENTA}}~0x05
+\item 
+\#define \mbox{\hyperlink{stdout__with__colour_8h_a82573859711fce56f1aa0a76b18a9b18}{COLOR\+\_\+\+CYAN}}~0x06
+\item 
+\#define \mbox{\hyperlink{stdout__with__colour_8h_a9b44987ffdc2af19b635206b94334b69}{COLOR\+\_\+\+WHITE}}~0x07
+\item 
+\#define \mbox{\hyperlink{stdout__with__colour_8h_a17f760256046df23dd0ab46602f04d02}{COLOR\+\_\+\+RESET}}~0x08
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{stdout__with__colour_8h_ac396aa1d408652bd35daa2caf1214287}{Log\+With\+Color}} (\+\_\+\+\_\+uint8\+\_\+t color, const char $\ast$text,...)
+\begin{DoxyCompactList}\small\item\em Print text with colour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains a function to print text with colour. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{stdout__with__colour_8h_a23c70d699a5a775bc2e1ebeb8603f630}\label{stdout__with__colour_8h_a23c70d699a5a775bc2e1ebeb8603f630}} 
+\index{stdout\_with\_colour.h@{stdout\_with\_colour.h}!COLOR\_BLUE@{COLOR\_BLUE}}
+\index{COLOR\_BLUE@{COLOR\_BLUE}!stdout\_with\_colour.h@{stdout\_with\_colour.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_BLUE}{COLOR\_BLUE}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+BLUE~0x04}
+
+\mbox{\Hypertarget{stdout__with__colour_8h_a82573859711fce56f1aa0a76b18a9b18}\label{stdout__with__colour_8h_a82573859711fce56f1aa0a76b18a9b18}} 
+\index{stdout\_with\_colour.h@{stdout\_with\_colour.h}!COLOR\_CYAN@{COLOR\_CYAN}}
+\index{COLOR\_CYAN@{COLOR\_CYAN}!stdout\_with\_colour.h@{stdout\_with\_colour.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_CYAN}{COLOR\_CYAN}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+CYAN~0x06}
+
+\mbox{\Hypertarget{stdout__with__colour_8h_afc9149f5de51bd9ac4f5ebbfa153f018}\label{stdout__with__colour_8h_afc9149f5de51bd9ac4f5ebbfa153f018}} 
+\index{stdout\_with\_colour.h@{stdout\_with\_colour.h}!COLOR\_GREEN@{COLOR\_GREEN}}
+\index{COLOR\_GREEN@{COLOR\_GREEN}!stdout\_with\_colour.h@{stdout\_with\_colour.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_GREEN}{COLOR\_GREEN}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+GREEN~0x02}
+
+\mbox{\Hypertarget{stdout__with__colour_8h_a8deb0beccea721b35bdb1b4f7264fe75}\label{stdout__with__colour_8h_a8deb0beccea721b35bdb1b4f7264fe75}} 
+\index{stdout\_with\_colour.h@{stdout\_with\_colour.h}!COLOR\_MAGENTA@{COLOR\_MAGENTA}}
+\index{COLOR\_MAGENTA@{COLOR\_MAGENTA}!stdout\_with\_colour.h@{stdout\_with\_colour.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_MAGENTA}{COLOR\_MAGENTA}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+MAGENTA~0x05}
+
+\mbox{\Hypertarget{stdout__with__colour_8h_ad86358bf19927183dd7b4ae215a29731}\label{stdout__with__colour_8h_ad86358bf19927183dd7b4ae215a29731}} 
+\index{stdout\_with\_colour.h@{stdout\_with\_colour.h}!COLOR\_RED@{COLOR\_RED}}
+\index{COLOR\_RED@{COLOR\_RED}!stdout\_with\_colour.h@{stdout\_with\_colour.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_RED}{COLOR\_RED}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+RED~0x01}
+
+\mbox{\Hypertarget{stdout__with__colour_8h_a17f760256046df23dd0ab46602f04d02}\label{stdout__with__colour_8h_a17f760256046df23dd0ab46602f04d02}} 
+\index{stdout\_with\_colour.h@{stdout\_with\_colour.h}!COLOR\_RESET@{COLOR\_RESET}}
+\index{COLOR\_RESET@{COLOR\_RESET}!stdout\_with\_colour.h@{stdout\_with\_colour.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_RESET}{COLOR\_RESET}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+RESET~0x08}
+
+\mbox{\Hypertarget{stdout__with__colour_8h_a9b44987ffdc2af19b635206b94334b69}\label{stdout__with__colour_8h_a9b44987ffdc2af19b635206b94334b69}} 
+\index{stdout\_with\_colour.h@{stdout\_with\_colour.h}!COLOR\_WHITE@{COLOR\_WHITE}}
+\index{COLOR\_WHITE@{COLOR\_WHITE}!stdout\_with\_colour.h@{stdout\_with\_colour.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_WHITE}{COLOR\_WHITE}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+WHITE~0x07}
+
+\mbox{\Hypertarget{stdout__with__colour_8h_a4534b577b74a58b0f4b7be027af664e0}\label{stdout__with__colour_8h_a4534b577b74a58b0f4b7be027af664e0}} 
+\index{stdout\_with\_colour.h@{stdout\_with\_colour.h}!COLOR\_YELLOW@{COLOR\_YELLOW}}
+\index{COLOR\_YELLOW@{COLOR\_YELLOW}!stdout\_with\_colour.h@{stdout\_with\_colour.h}}
+\doxysubsubsection{\texorpdfstring{COLOR\_YELLOW}{COLOR\_YELLOW}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+YELLOW~0x03}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{stdout__with__colour_8h_ac396aa1d408652bd35daa2caf1214287}\label{stdout__with__colour_8h_ac396aa1d408652bd35daa2caf1214287}} 
+\index{stdout\_with\_colour.h@{stdout\_with\_colour.h}!LogWithColor@{LogWithColor}}
+\index{LogWithColor@{LogWithColor}!stdout\_with\_colour.h@{stdout\_with\_colour.h}}
+\doxysubsubsection{\texorpdfstring{LogWithColor()}{LogWithColor()}}
+{\footnotesize\ttfamily void Log\+With\+Color (\begin{DoxyParamCaption}\item[{\+\_\+\+\_\+uint8\+\_\+t}]{color,  }\item[{const char $\ast$}]{text,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Print text with colour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The colour of the text. \\
+\hline
+{\em text} & The text to print. \\
+\hline
+\end{DoxyParams}

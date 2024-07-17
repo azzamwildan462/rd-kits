@@ -1,3 +1,11 @@
+/**
+ * @file kf_1d_v_const.h
+ *
+ * @brief This file contains a 1D Kalman filter with constant velocity model.
+ *
+ * This header was not used anymore, don't include it in the future.
+ */
+
 #ifndef KF_1d_V_CONST_H
 #define KF_1d_V_CONST_H
 
